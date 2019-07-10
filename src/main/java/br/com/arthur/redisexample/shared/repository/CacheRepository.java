@@ -4,7 +4,7 @@ import br.com.arthur.redisexample.shared.domain.Cache;
 
 public interface CacheRepository {
 
-	void save(Cache cache);
+	Cache get(String id);
 	
-	Cache findByHashCode(String hash);
+	void set(String id, String value);
 }

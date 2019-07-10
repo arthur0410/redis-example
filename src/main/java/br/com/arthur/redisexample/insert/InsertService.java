@@ -19,7 +19,7 @@ public class InsertService {
 
 	public void insert(CacheForm form) {
 		Cache cache = converter.convert(form);
-		repository.save(cache);
+		repository.set(cache.getId(), cache.getData());
 	}
 
 }

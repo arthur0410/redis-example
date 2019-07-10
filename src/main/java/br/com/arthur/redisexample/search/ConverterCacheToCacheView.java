@@ -11,7 +11,7 @@ public class ConverterCacheToCacheView implements Converter<Cache, CacheView> {
 	@Override
 	public CacheView convert(Cache arg0) {
 		// TODO Auto-generated method stub
-		return null;
+		return new CacheView(arg0.getId(), arg0.getData());
 	}
 
 }

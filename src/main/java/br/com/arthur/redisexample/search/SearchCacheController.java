@@ -18,7 +18,7 @@ public class SearchCacheController {
 	}
 	
 	CacheView findCacheByHash(String hash) {
-		Cache cache = repository.findByHashCode(hash);
+		Cache cache = repository.get(hash);
 		return converter.convert(cache);
 	}
 }

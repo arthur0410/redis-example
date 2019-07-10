@@ -5,6 +5,10 @@ public class CacheView {
 	private String id;
 	private String data;
 	
+	public CacheView(String id, String data) {
+		this.id = id;
+		this.data = data;
+	}
 	public String getId() {
 		return id;
 	}
